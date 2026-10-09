@@ -1,171 +1,373 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Samuel Kayombo | Information Technology Student at Mulungushi University</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Samuel Kayombo | IT Portfolio</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
+
 <body>
 
-  <header>
-    <h1>Samuel Kayombo</h1>
-    <p class="tagline">Information Technology student at Mulungushi University</p>
-  </header>
+    <!-- HEADER -->
+    <header id="home">
+        <h1>Samuel Kayombo</h1>
 
-  <nav aria-label="Main navigation">
-    <a href="#about">About Me</a>
-    <a href="#hobbies">My Hobbies</a>
-    <a href="#plan">My Learning Plan</a>
-    <a href="#photos">My Photos</a>
-    <a href="#media">My Media</a>
-    <a href="#contact">Contact</a>
-    <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noopener">Learn web development (MDN)</a>
-  </nav>
+        <p>Information Technology Student | Mulungushi University</p>
 
-  <main>
-
-    <section id="about" class="content-section">
-      <h2>About Me</h2>
-      <p>
-        I am a student at Mulungushi University in the School of Engineering and Technology,
-        studying  Information Technology. I enjoy solving problems with code and I like understanding
-        how things work behind the screen. This website is my second step in learning web
-        technologies, and I am using it to practise HTML structure, CSS styling and working with
-        photos, video and audio. My goal is to build clean websites that are easy to use on any device.
-      </p>
-    </section>
-
-    <section id="hobbies" class="content-section">
-      <h2>My Hobbies</h2>
-      <ul>
-        <li>Watching some movies</li>
-        <li>watching some Football games</li>
-        <li>I also love doing some Coding</li>
-      </ul>
-    </section>
-
-    <section id="plan" class="content-section">
-      <h2>My Learning Plan</h2>
-      <h3>Steps to improve my web skills</h3>
-      <ol>
-        <li>Finish the HTML and CSS lessons and rebuild this page without copying.</li>
-        <li>Learn responsive layout with Flexbox and Grid.</li>
-        <li>Learn basic JavaScript and add one interactive feature to my site.</li>
-        <li>Publish my projects on GitHub and keep practising every week so as i can be better.</li>
-      </ol>
-
-      <div class="table-wrap">
-        <table>
-          <caption>My weekly web learning plan</caption>
-          <thead>
-            <tr>
-              <th scope="col">Day</th>
-              <th scope="col">Topic</th>
-              <th scope="col">Practice task</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Monday</td>
-              <td>HTML structure</td>
-              <td>Build a page with header, nav, main and footer</td>
-            </tr>
-            <tr>
-              <td>Wednesday</td>
-              <td>CSS layout</td>
-              <td>Make a photo gallery with Flexbox</td>
-            </tr>
-            <tr>
-              <td>Friday</td>
-              <td>Forms</td>
-              <td>Create a contact form with required fields</td>
-            </tr>
-            <tr>
-              <td>Sunday</td>
-              <td>Git and GitHub</td>
-              <td>Commit and push the week's work</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- Hidden until the visitor taps "My Photos" in the nav -->
-    <section id="photos" class="content-section">
-      <h2>My Photos</h2>
-      <p class="hint">Tap another link in the menu to keep exploring.</p>
-      <div class="gallery">
-        <figure>
-          <img src="images/IMG-20260503-WA0023(1).jpg" alt="Photo 1: replace with a description of your first photo">
-          <figcaption>Photo 1: replace this caption to explain what the photo shows.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/IMG-20260503-WA0036(1).jpg" alt="Photo 2: replace with a description of your second photo">
-          <figcaption>Photo 2: replace this caption to explain what the photo shows.</figcaption>
-        </figure>
-        <figure>
-          <img src="images/IMG-20260503-WA0038(1).jpg" alt="Photo 3: replace with a description of your third photo">
-          <figcaption>Photo 3: replace this caption to explain what the photo shows.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section id="media" class="content-section">
-      <h2>My Media</h2>
-
-      <h3>Self-introduction video</h3>
-      <video controls preload="metadata">
-        <source src="20260928_220956.mp4" type="video/mp4">
-
-      </video>
-      <p>A short video where I introduce myself, my programme and the web skill I hope to learn.</p>
-      <details>
-        <summary>Read the written summary of the video</summary>
         <p>
-          My name is Samuel Kayombo. I study computer science at Mulungushi University.
-          One web skill I hope to learn is building responsive websites that work well on phones and computers.
+            Welcome to my personal portfolio. This website showcases my
+            interests, learning journey, projects and skills in Information
+            Technology.
         </p>
-      </details>
 
-      <h3>Audio clip</h3>
-      <audio controls preload="metadata">
-        <source src="videos/Introductory Audio.m4a"  type="audio/mp4">
-      </audio>
-      
-    </section>
+        <a href="#projects" class="project-button">View My Projects</a>
 
-    <section id="contact" class="content-section">
-      <h2>Contact</h2>
-      <p class="note">
-        
-      </p>
-      <form action="#" method="post">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+        <br><br>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <button type="button" id="themeButton">🌙 Dark Mode</button>
+    </header>
 
-        <label for="topic">Topic</label>
-        <select id="topic" name="topic">
-          <option value="question">Question</option>
-          <option value="collaboration">Collaboration</option>
-          <option value="feedback">Feedback</option>
-        </select>
+    <!-- NAVIGATION -->
+    <nav aria-label="Main navigation">
+        <a href="#about">About Me</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#plan">Learning Plan</a>
+        <a href="#calculator">Study Calculator</a>
+        <a href="#projects">Projects</a>
+        <a href="#photos">Gallery</a>
+        <a href="#media">Media</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+    <main>
 
-        <button type="submit">Send message</button>
-      </form>
-    </section>
+        <!-- ABOUT ME -->
+        <section id="about">
+            <h2>About Me</h2>
 
-  </main>
+            <p>
+                My name is Samuel Kayombo, and I am an Information Technology
+                student at Mulungushi University. I am interested in learning
+                how computers, software, networks and digital systems work.
+                Through my studies, I want to develop practical skills that
+                will help me solve problems and create useful technological
+                solutions. I am learning programming, web development and
+                computer systems. My goal is to become a skilled IT
+                professional who can contribute to organisations and use
+                technology to improve people's lives.
+            </p>
+        </section>
 
-  <footer>
-    <p>&copy; 2026 Samuel Kayombo | ICT251 Web Technologies, Mulungushi University</p>
-  </footer>
+        <!-- HOBBIES -->
+        <section id="hobbies">
+            <h2>My Hobbies and Interests</h2>
+
+            <ul>
+                <li>Learning about computers and technology.</li>
+                <li>Practising programming and web development.</li>
+                <li>Playing football and video games during my free time.</li>
+            </ul>
+        </section>
+
+        <!-- LEARNING PLAN -->
+        <section id="plan">
+            <h2>My Learning Plan</h2>
+
+            <p>
+                I am following these steps to improve my knowledge and skills
+                in Information Technology.
+            </p>
+
+            <ol>
+                <li>Learn the fundamentals of HTML and CSS.</li>
+                <li>Practise JavaScript and Java programming.</li>
+                <li>Build small projects to improve my practical skills.</li>
+                <li>Learn how to use Git and GitHub to manage my projects.</li>
+            </ol>
+
+            <h3>Learning Schedule</h3>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Topic</th>
+                            <th>Learning Activity</th>
+                            <th>Goal</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Practise creating web pages.</td>
+                            <td>Build structured websites.</td>
+                        </tr>
+
+                        <tr>
+                            <td>CSS</td>
+                            <td>Practise styling web pages.</td>
+                            <td>Create attractive layouts.</td>
+                        </tr>
+
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Build interactive features.</td>
+                            <td>Make websites respond to users.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Git and GitHub</td>
+                            <td>Practise saving and uploading projects.</td>
+                            <td>Manage and publish my work.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- STUDY HOURS CALCULATOR -->
+        <section id="calculator">
+            <h2>Study Hours Calculator</h2>
+
+            <p>
+                Calculate how many hours you plan to study each week.
+            </p>
+
+            <div class="calculator-form">
+
+                <label for="hoursPerDay">
+                    How many hours do you study per day?
+                </label>
+
+                <input
+                    type="number"
+                    id="hoursPerDay"
+                    min="0"
+                    max="24"
+                    step="0.5"
+                    placeholder="Example: 3"
+                >
+
+                <label for="daysPerWeek">
+                    How many days do you study per week?
+                </label>
+
+                <input
+                    type="number"
+                    id="daysPerWeek"
+                    min="1"
+                    max="7"
+                    step="1"
+                    placeholder="Example: 5"
+                >
+
+                <button type="button" id="calculateButton">
+                    Calculate Study Hours
+                </button>
+
+                <p id="calculatorResult" aria-live="polite">
+                    Your weekly study total will appear here.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- PROJECTS AND SKILLS -->
+        <section id="projects">
+            <h2>My Projects and Skills</h2>
+
+            <article class="project">
+                <h3>1. Web Development</h3>
+
+                <p>
+                    I am learning to create web pages using HTML, style them
+                    with CSS and add interactive features using JavaScript.
+                </p>
+            </article>
+
+            <article class="project">
+                <h3>2. Java Programming</h3>
+
+                <p>
+                    I am learning Java programming concepts, including
+                    variables, classes, objects, methods and constructors.
+                </p>
+            </article>
+
+            <article class="project">
+                <h3>3. Git and GitHub</h3>
+
+                <p>
+                    I am learning to manage project files, track changes
+                    and share my work using Git and GitHub.
+                </p>
+            </article>
+        </section>
+
+        <!-- PHOTO GALLERY -->
+        <section id="photos">
+            <h2>My Photo Gallery</h2>
+
+            <p>
+                Click Next Photo or Previous Photo to browse my photographs.
+            </p>
+
+            <figure class="gallery">
+
+                <img
+                    id="galleryImage"
+                    src="images/IMG-20260924-WA0080.jpg"
+                    alt="My first personal photograph"
+                >
+
+                <figcaption id="galleryCaption">
+                    Photo 1: My first personal photo.
+                </figcaption>
+
+                <div class="gallery-buttons">
+
+                    <button type="button" id="previousButton">
+                        Previous Photo
+                    </button>
+
+                    <button type="button" id="nextButton">
+                        Next Photo
+                    </button>
+
+                </div>
+
+            </figure>
+        </section>
+
+        <!-- VIDEO AND AUDIO -->
+        <section id="media">
+            <h2>My Video and Audio</h2>
+
+            <h3>My Video</h3>
+
+            <video class="media-video" controls preload="metadata">
+                <source
+                    src="videos/20260928_220956.mp4"
+                    type="video/mp4"
+                >
+
+                Your browser does not support HTML video.
+            </video>
+
+            <p>
+                <strong>Video summary:</strong>
+                This video forms part of my personal portfolio and
+                demonstrates the use of video media on a website.
+            </p>
+
+            <h3>My Audio Introduction</h3>
+
+            <audio controls preload="metadata">
+                <source
+                    src="videos/Introductory Audio.m4a"
+                    type="audio/mp4"
+                >
+
+                Your browser does not support HTML audio.
+            </audio>
+
+            <p>
+                This audio section allows visitors to listen to my introduction.
+            </p>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <p>
+                Complete the form to practise entering contact information.
+                This demonstration validates your information and displays
+                a preview; it does not send an email.
+            </p>
+
+            <form id="contactForm">
+
+                <label for="name">Full Name:</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Enter your full name"
+                >
+
+                <label for="email">Email Address:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Enter your email address"
+                >
+
+                <label for="topic">Reason for Contact:</label>
+
+                <select id="topic" name="topic" required>
+                    <option value="">Choose a topic</option>
+                    <option value="Education">Education</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Projects">Projects</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="message">Your Message:</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Write your message here"
+                ></textarea>
+
+                <button type="submit">Validate Message</button>
+
+                <p id="formPreview" aria-live="polite"></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            &copy; 2026 Samuel Kayombo |
+            Information Technology Portfolio
+        </p>
+
+        <p>
+            <a
+                href="https://github.com/YOUR-GITHUB-USERNAME/YOUR-REPOSITORY"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View Source on GitHub
+            </a>
+        </p>
+
+        <p>
+            <a href="#home">Back to Top</a>
+        </p>
+
+    </footer>
 
 </body>
 </html>
+```
