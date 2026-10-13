@@ -1,0 +1,354 @@
+```css
+/* General page settings */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f4f6f8;
+}
+
+img,
+video,
+audio {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+/* Header */
+header {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 2.4rem;
+}
+
+header p {
+    max-width: 750px;
+    margin: 10px auto;
+}
+
+/* Buttons and project link */
+button,
+.project-button {
+    display: inline-block;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1769aa;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.project-button:hover {
+    background-color: #0d4775;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #f0a500;
+    outline-offset: 3px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 15px;
+    background-color: #102840;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #1769aa;
+}
+
+/* Main content */
+main {
+    width: 92%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    color: #17365d;
+    margin-top: 0;
+}
+
+h3 {
+    color: #24527a;
+}
+
+/* Projects */
+.project {
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 4px solid #1769aa;
+    background-color: #f0f5fa;
+    border-radius: 4px;
+}
+
+/* Tables */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    color: white;
+    background-color: #17365d;
+}
+
+/* Study calculator */
+.calculator-form {
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font: inherit;
+    background-color: white;
+    color: #222;
+}
+
+.calculator-form button,
+form button {
+    margin-top: 18px;
+}
+
+#calculatorResult,
+#formPreview {
+    overflow-wrap: anywhere;
+}
+
+/* Photo gallery */
+.gallery {
+    margin: 20px auto;
+    max-width: 650px;
+    text-align: center;
+}
+
+#galleryImage {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 380px;
+    object-fit: contain;
+    margin: 0 auto;
+    background-color: #e8edf2;
+    border-radius: 8px;
+}
+
+#galleryCaption {
+    margin: 12px 0;
+    font-weight: bold;
+}
+
+.gallery-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+/* Video: smaller size */
+.media-video {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+audio {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    margin: 15px 0;
+}
+
+/* Contact form */
+form {
+    max-width: 650px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    padding: 25px 15px;
+    text-align: center;
+    color: white;
+    background-color: #102840;
+}
+
+footer a {
+    color: #b9e0ff;
+}
+
+/* Dark mode */
+body.dark-mode {
+    color: #eeeeee;
+    background-color: #15191f;
+}
+
+body.dark-mode section {
+    background-color: #242a33;
+    color: #eeeeee;
+}
+
+body.dark-mode section h2,
+body.dark-mode section h3 {
+    color: #8fc8ff;
+}
+
+body.dark-mode .project {
+    background-color: #303946;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background-color: #303946;
+    color: white;
+    border-color: #687789;
+}
+
+body.dark-mode #galleryImage {
+    background-color: #303946;
+}
+
+body.dark-mode table th {
+    background-color: #102840;
+}
+
+body.dark-mode table td {
+    border-color: #687789;
+}
+
+body.dark-mode .table-container {
+    color: #eeeeee;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #galleryImage {
+        height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.9rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    #galleryImage {
+        height: 240px;
+    }
+
+    .gallery-buttons button {
+        flex: 1 1 140px;
+    }
+
+    section {
+        padding: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+```
